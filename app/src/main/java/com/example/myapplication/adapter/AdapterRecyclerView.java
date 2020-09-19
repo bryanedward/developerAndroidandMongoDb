@@ -45,21 +45,18 @@ public class AdapterRecyclerView extends RecyclerView.Adapter<AdapterRecyclerVie
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        private TextView nameUser, title, publicacionUser, nivel, date;
+        private TextView nameUser, publicacionUser ;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-
             nameUser = itemView.findViewById(R.id.namePublication);
             publicacionUser = itemView.findViewById(R.id.detailsPublication);
 
         }
 
         public void dim (DataPublications publicacion){
-            this.title.setText(publicacion.getNamepublication());
+            this.nameUser.setText(publicacion.getNamepublication());
             this.publicacionUser.setText(publicacion.getDescriptpublication());
-
-
         }
     }
 }

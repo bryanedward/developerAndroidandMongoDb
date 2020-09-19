@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.myapplication.R;
 import com.example.myapplication.adapter.AdapterRecyclerView;
+import com.example.myapplication.connectMongodb.Connect;
 import com.example.myapplication.connectMongodb.Router;
 import com.example.myapplication.models.DataPublications;
 import com.example.myapplication.models.ListPublications;
@@ -27,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         recyclerView = findViewById(R.id.recyclerViewHome);
-        recyclerView.setHasFixedSize(true);
 
+        router  = Connect.getApiService();
         Call<ListPublications> listPublicationsCall =  router.obtenerPublcaciones();
 
         listPublicationsCall.enqueue(new Callback<ListPublications>() {
