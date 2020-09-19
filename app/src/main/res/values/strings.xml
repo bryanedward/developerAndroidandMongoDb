@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Salvando el semestre</string>
+    <string name="label">User</string>
+    <string name="pasword">Contraseña</string>
+</resources>
