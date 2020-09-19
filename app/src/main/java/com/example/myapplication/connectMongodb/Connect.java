@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Connect {
 
-    private static String BASE_URL = "https://nodejsreactm.herokuapp.com/";
+    private static String BASE_URL = "https://edwardev.herokuapp.com/api/";
 
     private static HttpLoggingInterceptor.Level LEVEL_LOG = HttpLoggingInterceptor.Level.BODY;
 

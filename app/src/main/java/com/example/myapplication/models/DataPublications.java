@@ -9,11 +9,11 @@ public class DataPublications {
     @Expose
     private String idpublication;
 
-    @SerializedName("first_name")
+    @SerializedName("name")
     @Expose
     private String namepublication;
 
-    @SerializedName("last_name")
+    @SerializedName("description")
     @Expose
     private String descriptpublication;
 

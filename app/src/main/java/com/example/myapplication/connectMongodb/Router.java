@@ -6,7 +6,7 @@ import retrofit2.http.GET;
 
 public interface Router {
 
-    @GET("publications")
+    @GET("projects")
     Call<ListPublications> obtenerPublcaciones();
 
 }

@@ -51,12 +51,13 @@ public class AdapterRecyclerView extends RecyclerView.Adapter<AdapterRecyclerVie
             super(itemView);
             nameUser = itemView.findViewById(R.id.namePublication);
             publicacionUser = itemView.findViewById(R.id.detailsPublication);
-
         }
 
         public void dim (DataPublications publicacion){
             this.nameUser.setText(publicacion.getNamepublication());
             this.publicacionUser.setText(publicacion.getDescriptpublication());
         }
+
+
     }
 }
