@@ -45,17 +45,19 @@ public class AdapterRecyclerView extends RecyclerView.Adapter<AdapterRecyclerVie
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        private TextView nameUser, publicacionUser ;
+        private TextView nameUser, publicacionUser, detailsDesperfecto ;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             nameUser = itemView.findViewById(R.id.namePublication);
             publicacionUser = itemView.findViewById(R.id.detailsPublication);
+            detailsDesperfecto = itemView.findViewById(R.id.detailsDesperfecto);
         }
 
         public void dim (DataPublications publicacion){
             this.nameUser.setText(publicacion.getNamepublication());
             this.publicacionUser.setText(publicacion.getDescriptpublication());
+            this.detailsDesperfecto.setText(publicacion.getDesperfectopublication());
         }
 
 

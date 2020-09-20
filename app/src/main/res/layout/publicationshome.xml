@@ -15,6 +15,10 @@
             android:id="@+id/detailsPublication"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
+    </TextView>
+    <TextView
+            android:id="@+id/detailsDesperfecto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
     </TextView>
 </LinearLayout>
