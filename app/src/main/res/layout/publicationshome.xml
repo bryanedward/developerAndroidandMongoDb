@@ -16,4 +16,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
     </TextView>
+
+    <TextView
+        android:id="@+id/urgencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:id="@+id/precio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
 </LinearLayout>

@@ -9,13 +9,14 @@ public class DataPublications {
     @Expose
     private String idpublication;
 
-    @SerializedName("first_name")
+    @SerializedName("tipo")
     @Expose
     private String namepublication;
-
-    @SerializedName("last_name")
-    @Expose
     private String descriptpublication;
+    private String urgencia;
+    private String tipo;
+    private String fecha;
+
 
     public String getIdpublication() {
         return idpublication;
